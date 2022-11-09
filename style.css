@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-top: #293241;
+  --bg-down: #bfd7e4;
+  --bg-heading-form: #f67669;
+  --bg-form: #ffffff;
+}
+
+body {
+  background-color: var(--bg-down);
+}
+
+body::before {
+  content: "";
+  background-color: var(--bg-top);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 465px;
+  z-index: -1;
+}
+
+.page {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 107px;
+}
+
+header img {
+  width: 225px;
+  height: 100px;
+  margin: 27px 0 29px;
+}
+
+header h1 {
+  font-family: "Staatliches", cursive;
+  text-transform: uppercase;
+  color: var(--bg-form);
+  line-height: 45px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+header p {
+  font-family: "Poppins", sans-serif;
+  color: var(--bg-form);
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.title {
+  width: 750px;
+  height: 133px;
+  background-color: var(--bg-heading-form);
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  padding: 50px 275px;
+}
+
+.title h2 {
+  font-family: "Staatliches", cursive;
+  text-transform: uppercase;
+  color: var(--bg-form);
+  line-height: 34px;
+  font-weight: 400;
+}
+
+form {
+  width: 750px;
+  background-color: var(--bg-form);
+  margin: auto;
+  padding: 31px 64px 178px;
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+span {
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	color: #C1BCCC;
+	margin-left:9px;
+}
+
+span:hover{
+	color: #8a888f;
+}
+
+input {
+  width: 300px;
+  height: 56px;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  background: #fafafc;
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+	margin-bottom: 16px;
+}
+
+
+/* alinha a label ao canto esquerdo do input */
+.input-wrapper,
+.input-wrapper-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* alinha o campo da nome e sobrenome ao lado */
+.input-wrapper-name {
+  display: flex;
+  gap: 22px;
+}
+
+/* alinha o input do email ao tamanho 100% do form */
+.input-wrapper-email input {
+  width: 100%;
+}
