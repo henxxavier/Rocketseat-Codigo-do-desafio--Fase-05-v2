@@ -43,7 +43,48 @@
           <input type="text" />
         </div>
 
-        <h2>Informações do mentor</h2>
+        <div class="sub-title">
+          <h2>Informações do mentor</h2>
+        </div>
+        
+        <div class="input-wrapper-mentor">
+          <label for="event.mentor-name">Selecione quem foi o seu mentor</label>
+          <input type="text" />
+        </div>
+
+        <div class="input-wrapper-feedback">
+          <label for="">Feedback sobre o mentor</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="event-checkbox">
+          <label for="">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+
+        <div class="sub-title">
+          <h2>Agendando próxima mentoria</h2>
+        </div>
+
+        <div class="container-data">
+          <div class="input-date">
+            <label for="event.date">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="date" />
+          </div>
+          <div class="container-hora">
+            <div class="input-time">
+              <label for="event.time">Das</label>
+              <input type="time" id="input-time"/>
+            </div>
+  
+            <div class="input-time">
+              <label for="event.time">Até</label>
+              <input type="time" id="input-time"/>
+            </div>       
+          </div>
+        </div>
+
+        <button>Salvar</button>
 
 
       </form>
